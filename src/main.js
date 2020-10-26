@@ -22,7 +22,7 @@ bot.onText(/\/start_test/, (msg) => {
     //-- оставлю чтоб просто было
     bot.sendMessage(msg.chat.id, 'Здарова', {
         reply_markup: {
-            keyboard: ['/randomPic']]
+            keyboard: ['/randomPic'],
         },
     });
     //---
@@ -54,7 +54,9 @@ bot.on('message', (msg) => {
             bot.sendLocation(msg.chat.id, 51.155034, 54.994556);
             bot.sendMessage(msg.chat.id, 'В Черном дельфине чалю');
             break;
-
+        case 'ауе':
+            bot.sendMessage(msg.chat.id, 'Фартук в масле оливье');
+            break;
         case 'ауе пацан':
             bot.sendPhoto(
                 msg.chat.id,
