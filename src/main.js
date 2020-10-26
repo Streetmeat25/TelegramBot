@@ -20,11 +20,11 @@ bot.on('polling_error', (err) => console.log(err));
 
 bot.onText(/\/start_test/, (msg) => {
     //-- оставлю чтоб просто было
-    // bot.sendMessage(msg.chat.id, 'Здарова', {
-    //     reply_markup: {
-    //         keyboard: ['/randomPic']]
-    //     },
-    // });
+    bot.sendMessage(msg.chat.id, 'Здарова', {
+        reply_markup: {
+            keyboard: ['/randomPic']]
+        },
+    });
     //---
 });
 
